@@ -11,10 +11,17 @@ ReactDOM.render(
 ReactDOM.render(<MainComponent/>, document.getElementById("content") )
 
 function MainComponent(){
-    return(
-        <div> 
-            <h1> I'm Learning React </h1>
+    return(     
             <h2>Hey Yo This is called from a function</h2>
-        </div>
     )
 }
+//day 2 JSX
+  ReactDOM.render(<h1 classname="header"> This is called JSX</h1>, document.getElementById("JSX"));
+
+  const page =(
+    <div>
+        <p>THis is a p tag</p>
+        <h1>This is a header tag</h1>
+    </div>
+  )
+ ReactDOM.render(page, document.getElementById("jsx1"));
