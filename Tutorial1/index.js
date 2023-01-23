@@ -25,3 +25,16 @@ function MainComponent(){
     </div>
   )
  ReactDOM.render(page, document.getElementById("jsx1"));
+
+
+ const nav=(
+    <nav>
+        <h1>My Website</h1>
+        <ul>
+            <li>Home</li>
+            <li>AboutUs</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+ )
+ ReactDOM.render(nav, document.getElementById("challengeNav"));
