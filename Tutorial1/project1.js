@@ -14,9 +14,13 @@
 //     </div>
 // )
 //we need our jsx to be nested under a single parent element. Here div is the parent element for h1 and ul.
-function Image(){
+function Header(){
     return(
+        <div>
+        <nav>
         <img src="download.png" height="91px"  width="138px"></img>
+        </nav>
+        </div>
     )
 }
 function Info(){
@@ -32,6 +36,24 @@ function Info(){
         </div>
     )
 }
+function Footer(){
+    return(
+        <p>
+            2023 React Development. All right reserved.
+        </p>
+    )
+}
 
-ReactDOM.render(<Image/>, document.getElementById("img"));
-ReactDOM.render(<Info/>, document.getElementById("root"));
+function Page(){
+    return(
+        <div> 
+        <Header/>
+        <Info/>
+        <Footer/>
+        </div>
+    )
+}
+
+// ReactDOM.render(<Header/>, document.getElementById("header"));
+ReactDOM.render(<Page/>, document.getElementById("root"));
+// ReactDOM.render(<Footer/>, document.getElementById("footer"));
