@@ -17,8 +17,13 @@
 function Header(){
     return(
         <div>
-        <nav>
-        <img src="download.png" height="91px"  width="138px"></img>
+        <nav className="nav">
+        <img src="download.png" className="image"></img>
+        <ul className="navitems">
+            <li>Pricing</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
         </nav>
         </div>
     )
