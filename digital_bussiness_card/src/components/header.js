@@ -3,11 +3,17 @@ import shree from "../image/shree.jpg"
 export default function Header(){
     return(
         <div>
+            <center>
         <img src={shree} className="image"></img>
-        <h2> Shreejal Maharjan</h2>
-        <h3> Frontend Developer</h3>
-        <h4> maharjanshreejal.com.np</h4>
+        <br/>
+        <span id="name"> Shreejal Maharjan</span> <br/>
+
+        <span> Frontend Developer</span><br/>
+        <span> maharjanshreejal.com.np</span>
+        <br/>
+        <br/>
         <button>Email</button>
+            </center>
         </div>
     )
 }

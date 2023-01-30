@@ -1,3 +1,39 @@
 body{
-  background-color: blue;
+  width: 50%;
+  background-color: #1F2125;
+  color: white;
+  margin: 10% 25%;
+}
+#root{
+  background-color: #181A1E;
+  padding: 50px;
+}
+img{
+ height: 100%;
+ width: 100%;
+ border-radius: 7px;
+}
+
+#name{
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+button{
+  height: 30px;
+  width: 100%;
+  background-color: white;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.icon > * {
+  fill: #B3B3B3;
+}
+
+.icon > *:hover {
+  fill: #747474;
+}
+.social-icon{
+  margin: 7px;
 }
