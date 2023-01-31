@@ -1,11 +1,11 @@
 import React from "react"
-import airbnb from "../image/airbnb.png"
+import logo from "../image/airbnb.png"
 export default function Header(){
     return(
-        <div>
+        <nav>
     
-        <img src={airbnb} className="image"></img>
+        <img src={logo} className="image"></img>
   
-        </div>
+        </nav>
     )
 }
