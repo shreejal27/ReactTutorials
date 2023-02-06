@@ -3,7 +3,7 @@ import hero from "../image/hero.png"
 export default function Hero(){
     return(
     
-        <div >
+        <section >
         <center>
         <img src={hero} className="heroImage"></img>
         </center>
@@ -16,6 +16,6 @@ export default function Hero(){
             Join unique interactive activities led by one-of-a kind hosts -all without leaving home.
         </p>
         </div>
-        </div>
+        </section>
     )
 }
