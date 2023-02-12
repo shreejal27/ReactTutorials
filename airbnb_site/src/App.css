@@ -14,3 +14,17 @@ nav{
 .heroElement{
     padding: 20px 36px;
 }
+.cardImage{
+    width: 200px;
+    padding: 20px 36px;
+    border-radius: 60px;
+}
+.star{
+    width:25px;
+}
+.rating{
+    text-align: center;
+}
+.cardElement{
+    padding: 20px 36px;
+}
