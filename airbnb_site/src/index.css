@@ -1,1 +1,16 @@
 
+.cardImage{
+    width: 200px;
+    padding: 10px 36px 0px 36px;
+    border-radius: 60px;
+}
+.cardTitle{
+    padding: 0px 36px;
+}
+.star{
+    width:25px;
+}
+
+.cardElement{
+    padding: 0px 36px;
+}
