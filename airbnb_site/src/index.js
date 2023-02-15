@@ -2,6 +2,7 @@ import React from "react"
 import ReactDOM from "react-dom"
 import "./index.css"
 // import App from "./App"
+
 import Contact from "./component/contact"
 
 
@@ -30,10 +31,22 @@ import Contact from "./component/contact"
 function App(){
     return(
         <div className="ContactCard">
-            <Contact/>
-            <Contact/>
-            <Contact/>
-            <Contact/>
+            <Contact
+                img="./image/bebe.jpg"
+                name="Bebe Rexha"
+                email= "beberexha@gmail.com"/>
+            <Contact
+             img="./image/juice.jpg"
+             name="Juice Wrld"
+             email= "juice@gmail.com"/>
+            <Contact
+             img="./image/bebe.jpg"
+             name="Bebe Rexha"
+             email= "beberexha123@gmail.com"/>
+            <Contact
+             img="./image/juice.jpg"
+             name="Juice Wrld"
+             email= "juice123@gmail.com"/>
         </div>
     )
     }
