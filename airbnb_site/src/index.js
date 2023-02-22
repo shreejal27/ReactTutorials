@@ -32,19 +32,19 @@ function App(){
     return(
         <div className="ContactCard">
             <Contact
-                img="./image/bebe.jpg"
+                img="bebe.jpg"
                 name="Bebe Rexha"
                 email= "beberexha@gmail.com"/>
             <Contact
-             img="./image/juice.jpg"
+             img="juice.jpg"
              name="Juice Wrld"
              email= "juice@gmail.com"/>
             <Contact
-             img="./image/bebe.jpg"
+             img="bebe.jpg"
              name="Bebe Rexha"
              email= "beberexha123@gmail.com"/>
             <Contact
-             img="./image/juice.jpg"
+             img="juice.jpg"
              name="Juice Wrld"
              email= "juice123@gmail.com"/>
         </div>

@@ -5,6 +5,7 @@ import "./App.css"
 import Header from "./component/header"
 import Hero from "./component/hero"
 import Card from "./component/card"
+
 // import Footer from "./components/footer"
 
 

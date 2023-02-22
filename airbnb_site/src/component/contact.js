@@ -1,19 +1,19 @@
 import React from "react"
 import star from "../image/star.png"
-import bebe from "../image/bebe.jpg"
-export default function Contact({img,name,email}){
-
-    return(
-        <div >
-        <img src= {img} className="cardImage"></img>
-        <h3 className="cardTitle">{name}</h3>
-        <div className="cardElement">
-       <img src={star} className="star"></img>
-        <span>5.0</span> 
-        <p>
-        {email}
-        </p>
-        </div>
-        </div>
-    )
+import data from "../data"
+import Card from "./card";
+console.log(data);
+export default function Contact(){
+    const cards= data.map(item=>{
+        return(
+            <Card
+            img={item.id}
+            cardtitle={item.title}
+            gmail={item.gmail}
+            price={item.price}
+          
+            />
+        )
+    })
+   
 }
