@@ -23,3 +23,22 @@ nav{
   float: right;
 
 }
+
+input[type="text"]{
+  color: black;
+  margin: 10px;
+  margin-top: 50px;
+  width: 25%;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 8px;
+}
+input[type="submit"]{
+  margin-top: 10px;
+  background-color: purple;
+  height: 45px;
+  width: 53%;
+  font-size: 16px;
+  border-radius: 5px;
+}
