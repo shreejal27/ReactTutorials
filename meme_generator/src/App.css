@@ -34,11 +34,12 @@ input[type="text"]{
   border-radius: 5px;
   padding-left: 8px;
 }
-input[type="submit"]{
+button{
   margin-top: 10px;
   background-color: purple;
   height: 45px;
   width: 53%;
   font-size: 16px;
   border-radius: 5px;
+  cursor: pointer;
 }
