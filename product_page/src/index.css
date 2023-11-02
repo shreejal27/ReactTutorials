@@ -15,7 +15,6 @@ code {
 nav {
   height: 5rem;
   width: 100%;
-  border: 1px solid black;
   text-align: center;
   background-color: #232F3D;
 }
@@ -33,7 +32,6 @@ nav {
 .leftCol {
   float: left;
   width: 48%;
-  border: 1px solid black;
   position: relative;
 }
 
@@ -62,7 +60,6 @@ nav {
 .rightCol {
   float: left;
   width: 48%;
-  border: 1px solid black;
 }
 
 .productTitle {
@@ -70,7 +67,6 @@ nav {
 }
 
 .productOptionRow {
-  border: 1px solid black;
   height: 7rem;
 }
 
