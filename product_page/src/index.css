@@ -26,40 +26,94 @@ nav {
   margin-top: 0.7rem;
 }
 
-.mainContainer{
+.mainContainer {
   padding: 1rem 10rem;
 }
 
-.leftCol{
+.leftCol {
   float: left;
   width: 48%;
   border: 1px solid black;
+  position: relative;
 }
 
-.productImage{
+.productImage {
   height: 100%;
   width: 100%;
-
 }
 
+.currentTime {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  font-size: 3rem;
+}
+
+.currentHeartBeat{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  font-size: 3rem;
+}
 .rightCol {
   float: left;
   width: 48%;
   border: 1px solid black;
 }
 
-.productTitle{
+.productTitle {
   font-size: 3rem;
 }
 
-.productOptionRow{
+.productOptionRow {
   border: 1px solid black;
   height: 7rem;
 }
 
-.productOptionImage{
+.productOptionImage {
   height: 100%;
   width: auto;
-  border: 1px solid red;
   border-radius: 1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.selectedProductImage {
+  border: 1px solid red;
+}
+
+.featureRow {
+  height: 2.7rem;
+  width: auto;
+}
+
+.featureButton {
+  height: 100%;
+  width: 8rem;
+  background-color: gainsboro;
+  color: black;
+  font-size: 1rem;
+  margin-right: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.selectedfeatureButton {
+  background-color: gray;
+}
+
+.buyBtn {
+  height: 2.5rem;
+  width: 8rem;
+  background-color: #808080;
+  color: white;
+  font-size: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
 }
