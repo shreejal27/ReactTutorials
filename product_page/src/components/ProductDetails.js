@@ -1,9 +1,10 @@
 import React from "react"
 
 export default function ProductDetails (props) {
+
     const colorOptions = props.colorOptions.map((item, pos) => {
         return (
-            <img key={pos} src={item.imageUrl} className="productOptionImage" alt="productOptionImage"></img>
+            <img key={pos} src={item.imageUrl} className="productOptionImage" alt="productOptionImage" onClick={()=>props.onColorOptionClick(pos)}></img>
         );
     })
     const featureList = props.featureOptions.map((item, pos) => {

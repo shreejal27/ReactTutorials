@@ -5,7 +5,7 @@ export default function ProductPreview (props) {
     return (
         <div>
                 <div className="leftCol">
-                    <img src={props.img} className="productImage" alt="productImage"></img>
+                    <img src={props.selectedColor} className="productImage" alt="productImage"></img>
 
                     <div className="currentTime">
                         <p>{new Date().getHours()} : {new Date().getMinutes()}</p>
