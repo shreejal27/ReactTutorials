@@ -35,18 +35,6 @@ function App(){
                 img="bebe.jpg"
                 name="Bebe Rexha"
                 email= "beberexha@gmail.com"/>
-            <Contact
-             img="juice.jpg"
-             name="Juice Wrld"
-             email= "juice@gmail.com"/>
-            <Contact
-             img="bebe.jpg"
-             name="Bebe Rexha"
-             email= "beberexha123@gmail.com"/>
-            <Contact
-             img="juice.jpg"
-             name="Juice Wrld"
-             email= "juice123@gmail.com"/>
         </div>
     )
     }

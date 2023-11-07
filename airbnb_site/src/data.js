@@ -2,13 +2,15 @@ export default [
     {
         id:1,
         title:"BEBE RExha",
+        img:"bebe.jpg",
         price: 200,
-        email: "abc@gmail.com"
+        gmail: "abc@gmail.com"
     },
     {
         id:2,
         title:"Juice Wrld",
+        img:"juice.jpg",
         price: 1000,
-        email: "juice@gmail.com"
+        gmail: "juice@gmail.com"
     },
 ]

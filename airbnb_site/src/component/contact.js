@@ -1,19 +1,22 @@
 import React from "react"
-import star from "../image/star.png"
 import data from "../data"
 import Card from "./card";
 
 export default function Contact(){
-    const cards= data.map(item=>{
-        return(
-            <Card
-            img={item.id}
+    const cards = data.map(item => (
+        <Card
+            key={item.id}
+            img={item.img}
             cardtitle={item.title}
-            gmail={item.gmail}
+            gmail={item.gmail} // Changed from item.gmail
             price={item.price}
-          
-            />
-        )
-    })
+        />
+    ))
+
+    return (
+        <div>
+            {cards}
+        </div>
+    )
    
 }
