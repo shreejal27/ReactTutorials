@@ -1,24 +1,18 @@
 import React from "react"
-import boxes from "./boxes"
-import Box from "./Box"
-
 import "./App.css"
+
 
 export default function App() {
 
-  const [squares, setSquares] = React.useState(boxes);
+  // const [squares, setSquares] = React.useState(boxes);
+  //1)const [messages, setMessages] = React.useState(["a", "b"]);
+  const [messages, setMessages] = React.useState(["a", "b"]);
 
-  const squareElement = squares.map(square=>(
-    // <div style={{backgroundColor:"black"}} className="box" key={square.id}></div> OR
-    // <div style={styles} className="box" key={square.id}></div>
-      <Box key={square.id} status={square.on} />
-  ))
+  return (
+    <main>
+      {/* 1) {messages.length > 0 && <h1>You have {messages.length} unread messages</h1>} */}
 
-     
-    return(
-        <main> 
-          <h1>Click on a box to change its color</h1>
-        {squareElement}
+      {messages.length === 0 ? <h1>You are all caught up</h1> : <h1>You have {messages.length} unread {messages.length > 1 ? "messages" : "message"}</h1> }
         </main>
-    )
+  )
 }
