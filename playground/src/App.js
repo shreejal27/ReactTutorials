@@ -1,87 +1,34 @@
 import React from "react"
 
-
 export default function App() {
+  const [starWarsdata, setStarWarsData] = React.useState({})
 
-  const [formData, setFormData] = React.useState(
-    {
-      email: "",
-      password: "",
-      confirmPassword: "",
-      newsletter: false
-    }
-  );
+  console.log("Component Rendered")
 
-  // console.log(formData);
+  // fetch("https://swapi.dev/api/people/1")
+  // .then(res => res.json())
+  // .then(data => setStarWarsData(data))
 
-  function handleChange(event) {
+  //setStarWarsData(data) in the above api call will make component render infinite times as it is updating the state and causing re-rendering of the component
 
-    const { name, value, type, checked } = event.target
-    setFormData(prevFormData => {
-      return {
-        ...prevFormData,
-        [name]: type === "checkbox" ? checked : value
-     
-      }
-
-    })
-  }
-
-  function handleSubmit(event) {
-    // submitToApi(formData) if you have a API function
-    event.preventDefault()
-   if(formData.password === formData.confirmPassword) {
-    console.log("Successfully signed up");
-    }else{
-      console.log("Passwords do not match");
-      return;
-    } 
-    if(formData.newsletter === true) {
-      console.log("Thanks for signing up for our newsletter") 
-    } 
-    console.log(formData)
-  }
+  //side effects
+  React.useEffect(() => {
+    fetch("https://swapi.dev/api/people/1")
+      .then(res => res.json())
+      .then(data => setStarWarsData(data))
+  }, [])
+  //useEffect will always run on first render
+  //useEffect has two parameters : 1) callback function 
+  //it helps developers to put side effect code. side effect code those codes reaching outside of React ecosystem but also trying to update the state of the component
+  //eg of side effects : local storage, API, websockets, etc
+  
+  // 2) dependency array
+  // it is an array of values that useEffect will watch for changes and only when those values change will the callback be called again and the side effect run again 
+  // basicaslly checks the values of previous array with new array
 
   return (
-    <main>
-      <form onSubmit={handleSubmit}>
-        <input
-         
-          placeholder="Email"
-          onChange={handleChange}
-          name="email"
-          value={formData.email}
-        />
-
-        <input
-         type="password"
-          placeholder="Password"
-          onChange={handleChange}
-          name="password"
-          value={formData.password}
-        />
-
-
-        <input
-         type="password"
-          placeholder="Password"
-          onChange={handleChange}
-          name="confirmPassword"
-          value={formData.confirmPassword}
-        />
-
-        <input
-          type="checkbox"
-          checked={formData.newsletter}
-          onChange={handleChange}
-          name="newsletter"
-          id="newsLetter" />
-
-        <label htmlFor="newsLetter"> I want to join NewsLetter</label>
-
-        <br />
-        <button>Submit</button>
-      </form>
-    </main>
+    <div>
+      <pre>{JSON.stringify(starWarsdata, null, 2)}</pre>
+    </div>
   )
 }
