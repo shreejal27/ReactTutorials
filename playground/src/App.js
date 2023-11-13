@@ -1,18 +1,50 @@
 import React from "react"
-import "./App.css"
 
 
 export default function App() {
 
-  // const [squares, setSquares] = React.useState(boxes);
-  //1)const [messages, setMessages] = React.useState(["a", "b"]);
-  const [messages, setMessages] = React.useState(["a", "b"]);
+  const [formData, setFormData] = React.useState(
+    { firstName: "", 
+    lastName: "",
+    email: "" }
+  );
+
+  console.log(formData);
+
+  function handleChange(event) {
+    setFormData(prevFormData => {
+      return {
+        ...prevFormData,
+        [event.target.name]: event.target.value
+      }
+
+    })
+  }
 
   return (
     <main>
-      {/* 1) {messages.length > 0 && <h1>You have {messages.length} unread messages</h1>} */}
+      <form>
+        <input
+          type="text"
+          placeholder="First Name"
+          onChange={handleChange}
+          name="firstName"
+        />
 
-      {messages.length === 0 ? <h1>You are all caught up</h1> : <h1>You have {messages.length} unread {messages.length > 1 ? "messages" : "message"}</h1> }
-        </main>
+        <input
+          type="text"
+          placeholder="Last Name"
+          onChange={handleChange}
+          name="lastName"
+        />
+
+        <input
+          type="email"
+          placeholder="Email"
+          onChange={handleChange}
+          name="email"
+        />
+      </form>
+    </main>
   )
 }
