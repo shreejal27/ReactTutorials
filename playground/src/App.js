@@ -1,26 +1,20 @@
 import React from "react"
+import WindowTracker from "./WindowTracker"
 
 export default function App() {
-  const [starWarsdata, setStarWarsData] = React.useState({})
 
-  const [count, setCount] = React.useState(1)
+  const [show, setShow] = React.useState(true)
 
-
-  React.useEffect(() => {
-    fetch(`https://swapi.dev/api/people/${count}`)
-      .then(res => res.json())
-      .then(data => setStarWarsData(data))
-  }, [count])
-
-  function increment() {
-    setCount(prevCount => prevCount + 1)
+  function toggle() {
+    setShow(prevShow => !prevShow)
   }
+
+  
 
   return (
     <div>
-      <h2>The count is {count}</h2>
-      <button onClick={increment}>Next Character</button>
-      <pre>{JSON.stringify(starWarsdata, null, 2)}</pre>
+        <button onClick={toggle}> Toggle Window Tracker </button>
+       { show && <WindowTracker/> }
     </div>
   )
 }
