@@ -1,7 +1,7 @@
 
-export default function Info(){
+export default function Info(props){
     return (
-        <div>
+        <div id={props.darkMode ? "dark" : ""}>
         <h1>Fun facts about React</h1>
         <ul>
             <li>Was first released in 2013</li>

@@ -9,11 +9,18 @@ import Info from "./components/Info"
 
 
 export default function Page(){
+    const [darkMode, setDarkMode] = React.useState(true)
+
+    function toggleDarkMode(){
+        console.log("Clicked")
+        setDarkMode(prevMode => !prevMode)
+    }
+
     return(
         <div> 
-        <Header/>
-        <Info/>
-        <Footer/>
+        <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
+        <Info darkMode={darkMode}/>
+        <Footer darkMode={darkMode}/>
         </div>
     )
 }
